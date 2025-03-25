@@ -1,0 +1,1 @@
+export type TStatus = 'in_moderation' | 'accepted' | 'rejected'

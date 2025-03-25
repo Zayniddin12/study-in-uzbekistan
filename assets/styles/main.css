@@ -1,0 +1,272 @@
+@import url("../icomoon/style.css");
+@import url("./_plugins.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gm-style-mtc-bbw{
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+    background: #F7F9FA;
+}
+
+@media print {
+    header, footer, .single-footer, .breadcrumb .marquee-container, .download-secs {
+        display: none;
+    }
+}
+
+
+@layer utils {
+    .transition-300 {
+        @apply transition-all duration-300;
+    }
+
+    .absolute-x {
+        @apply absolute !-translate-x-1/2 !left-1/2;
+    }
+
+    .absolute-y {
+        @apply absolute !-translate-y-1/2 !top-1/2;
+    }
+
+    .absolute-center {
+        @apply absolute-x absolute-y;
+    }
+
+    .flex-y-center {
+        @apply flex items-center;
+    }
+
+    .flex-x-center {
+        @apply flex justify-center;
+    }
+
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .flex-center-between {
+        @apply flex justify-between items-center;
+    }
+
+    .flex-between {
+        @apply flex justify-between;
+    }
+}
+
+.heading-1 {
+    color: #181818;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 112%;
+}
+
+
+.fade-enter-active {
+    animation: fade 0.3s ease-in-out;
+}
+
+.fade-leave-active {
+    animation: fade 0.3s ease-in-out reverse;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.default-shadow {
+    box-shadow: 0 4px 28px 0 rgba(24, 24, 24, 0.03);
+}
+
+.info-label {
+    color: #A0ABB8;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112%;
+}
+
+.info-value {
+    color: #181818;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 112%;
+}
+
+.static-text.no-margin > * {
+    margin: 0 !important;
+}
+
+.static-text img, .static-text blockquote {
+    max-width: 100% !important;
+}
+
+.static-text p,
+.static-text li {
+    color: #181818;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.static-text.small-content p,
+.static-text.small-content li {
+    font-size: 14px;
+}
+
+.static-text ol,
+.static-text ul {
+    padding-left: 24px;
+}
+
+.static-text ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.static-text li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: #0067FF;
+    position: absolute;
+    top: 10px;
+    left: -16px;
+}
+
+.static-text ol li {
+    list-style: none;
+}
+
+.static-text a {
+    color: #4489F7;
+}
+
+.static-text a:hover {
+    text-decoration: underline;
+}
+
+.static-text img {
+    border-radius: 20px;
+}
+
+.static-text b {
+    font-weight: 500;
+}
+
+.static-text h4 {
+    color: #4489F7;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 12px;
+    margin-bottom: 12px !important;
+    position: relative;
+}
+
+.static-text h4:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #4489F7;
+    height: 1px;
+    width: 130px;
+}
+
+.static-text h1, .static-text h2, .static-text h3 {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.static-text h1 {
+    font-size: 32px;
+}
+
+.static-text h2 {
+    font-size: 24px;
+}
+
+.static-text h3 {
+    font-size: 18.72px;
+}
+
+.static-text blockquote {
+    margin: 20px 0;
+    padding: 24px;
+    position: relative;
+    background: #E1E8F0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.static-text blockquote p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.static-text blockquote p,
+.static-text blockquote {
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: #181818;
+}
+
+.static-text blockquote h2 {
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+    font-weight: 400;
+    color: #121c25;
+    line-height: 130%;
+}
+
+.static-text blockquote:after {
+    content: "\e900";
+    font-family: icomoon;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    color: #0067FF;
+    opacity: 0.22;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.leading-custom-normal {
+    line-height: normal !important;
+}
+
+.footer-site-info > p {
+    display: inline;
+    white-space: break-spaces;
+    word-break: break-word;
+}
+
+.static iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
+}

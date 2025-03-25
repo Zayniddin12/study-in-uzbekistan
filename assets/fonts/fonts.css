@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Norms";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Norms";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Norms";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Norms";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Black.woff2") format("woff2");
+}
+
+/* MTS */
+
+@font-face {
+    font-family: "MTS";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MTS";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MTS";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "MTS";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: url("./norms/Black.woff2") format("woff2");
+}
+
+
+body {
+    font-family: 'Norms', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-mts {
+    font-family: 'MTS', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
